@@ -481,10 +481,10 @@ public class PushPlugin extends CordovaPlugin implements PushConstants {
     super.onDestroy();
     gForeground = false;
     gWebView = null;
-	
-	if (prefs.getBoolean(CLEAR_NOTIFICATIONS, true)) {
+	clearAllNotifications();
+	/*if (prefs.getBoolean(CLEAR_NOTIFICATIONS, true)) {
       clearAllNotifications();
-    }
+    }*/
   }
 
   private void clearAllNotifications() {
