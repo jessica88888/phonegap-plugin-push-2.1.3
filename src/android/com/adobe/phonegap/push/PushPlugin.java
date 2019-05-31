@@ -486,10 +486,10 @@ public class PushPlugin extends CordovaPlugin implements PushConstants {
       clearAllNotifications();
     }*/
   }
-  
+  /*
   public void onTaskRemoved (){
 	  clearAllNotifications();
-  }
+  }*/
 
   private void clearAllNotifications() {
     final NotificationManager notificationManager = (NotificationManager) cordova.getActivity()
